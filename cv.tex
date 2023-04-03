@@ -21,7 +21,7 @@
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
-%-----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	DOCUMENT DEFINITION
 %----------------------------------------------------------------------------------------
 
@@ -49,6 +49,7 @@
 %----------------------------------------------------------------------------------------
 \usepackage{url}
 \usepackage{parskip} 	
+
 
 %other packages for formatting
 \RequirePackage{color}
@@ -88,11 +89,12 @@
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
+%\addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
 
 %for social icons
 \usepackage{fontawesome5}
+\usepackage{MnSymbol,bbding,pifont}
 
 %debug page outer frames
 %\usepackage{showframe}
@@ -105,94 +107,107 @@
 % non-numbered pages
 \pagestyle{empty} 
 
-%----------------------------------------------------------------------------------------
-%	TITLE
-%----------------------------------------------------------------------------------------
-
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
+% BEGIN HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Hosain Ghoraba after renaming } \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
-\end{tabularx}
+\Huge{Hosain Ghoraba} \\ [7.5pt]
+ \item\faMapMarker{\hspace{3mm}3rd Settlement, Cairo, Egypt} \\ \\
+\mbox {
 
-%----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
-%----------------------------------------------------------------------------------------
+\href{https://github.com/hosain-ghoraba}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ \ 
 
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+\href{https://www.linkedin.com/in/hussain-ghoraba-a35752264/}{\raisebox{-0.05\height}\faLinkedin\ Linkedin} \ $|$ \ 
 
-%Experience
-\section{Work Experience}
+\href{mailto:hussain.ghoraba@gmail.com}{\raisebox{-0.05\height}\faEnvelope \  Gmail} \ $|$ \ 
+\href{tel:+20 01026311800}{\raisebox{-0.05\height}\faMobile \ +20 01026311800} 
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Designation} & \hfill Jan 2021 - present \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Designation} & \hfill Mar 2019 - Jan 2021 \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] long long line of blah blah that will wrap when the table fills the column width
-        \item[--] again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-    \end{itemize}
-    \end{minipage}
 }
 \end{tabularx}
 
-%Projects
-\section{Projects}
+% SUMMARY ------------------------------------------
+\section{\textbf{Summary} }
+    \begin{itemize}
+        \item   CSE Student with some Competitive Programming experience
+        \item  Java , SQL, \& FLASK (Top 3)
+        \item Available from 24/6/2023 to 1/10/2023
+    \end{itemize}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+% EDUCATION------------------------------------------
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+    \section{\textbf{EDUCATION}}
+    %\begin{tabularx}{\linewidth}{@{}l X@{}}	
+        \begin{itemize}              
+            \item  
+                \href{https://www.linkedin.com/school/german-          university-in-cairo/about/} {German University In     Cairo} \textbf{(GUC)} \hfill {2020 - 2025 (expected graduation)}
+            \item B.S. Computer Science and Engineering (currently in my 6th Semester)
+            %\item 2020 - 2025 
+            \item Grade : B
+        \end{itemize}
+   % \end{tabularx}
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
+%Projects--------------------------------------------------
+    \section{\textbf{Projects}}
+    
+    \textbf{1 - }
+    \href{https://github.com/hosain-ghoraba/Sports-Management_Registeration-DBMS} {Flask Web App \& SQL DataBase} } (Team of 2) \hfill {Oct 2022 - Jan 2023 (5th Semester) }
+    \begin{itemize}
+        \item Online System for managing sports matches creation and 
+              reservation
+        \item SQL Role : different parts of DataBase design and             implementation
+        \item Flask Role : FullStack
+    \end{itemize}
+    
 
-2021 & Class 10th Some Board \hfill  (Grades) \\
-\end{tabularx}
+    \textbf{2 - }
+    \href{https://github.com/hosain-ghoraba/Extended-2048-Game} {Java Desktop Game } }  \hfill {July 2022 (Summer Holiday) }
+    \begin{itemize}
+        \item An extended version of the famous 2048 Game
+        \item Solo Project For fun 
+    \end{itemize}
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+    \textbf{3 - }
+    \href{https://github.com/hosain-ghoraba/Marvel-Game} {Java OOP Structured Desktop Game } } (Team of 3) \hfill {March 2022 - June 2022 }
+    \begin{itemize}
+        
+        \item Multiplayer game, where heroes fight on a grid
+        \item Role : different parts of both the engine and the GUI (using swing Library)
+    \end{itemize}
 
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
-\end{tabularx}
+%Volunteering--------------------------------------
+    \section{\textbf{Volunteering}}
+    \textbf{Java Junior Teaching Assistant } (German University In Cairo)  \hfill {March 2023 - present} \\  \\  
+     - helping +20 students solve java problems in the labs
 
-\vfill
-\center{\footnotesize Last updated: \today}
+% Technical skills-----------------------------------
+\section{\textbf{Programming Languages}}
+ 
+     Java   \FiveStar \FiveStar \FiveStar \FiveStar \hspace{0.2cm}    SQL    \FiveStar \FiveStar \FiveStar           \hspace{0.2cm}
+     FLASK  \FiveStar \FiveStar \FiveStar           \hspace{0.2cm}\\  
+     Python \FiveStar \FiveStar                     \hspace{0.2cm}   
+     HTML   \FiveStar \FiveStar                     \hspace{0.2cm}  
+     JavaScript    \FiveStar                         \hspace{0.2cm}
+     CSS    \FiveStar                               
+        
+
+  
+  
+
+
+
+% Languages -----------------------------------
+\section{\textbf{Languages}}
+
+ - Arabic (Native) 
+ - English (Profficient)
+ - German (Elementary) 
+% ----------------------------------------
+
+% Hobbies -----------------------------------
+% \section{\textbf{Hobbies}}
+%  Competetive Programming , Chess , Swimming
+   
+ % ----------------------------------------
+
 
 \end{document}
