@@ -1,0 +1,14 @@
+# LaTeX temporary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+
+# Other files
+# .cv.pdf  # if you don't want to track the generated PDF
