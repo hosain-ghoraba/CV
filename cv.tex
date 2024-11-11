@@ -23,7 +23,6 @@
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
-\usepackage{tabularx}
 \newlength{\fullcollw}
 \setlength{\fullcollw}{0.47\textwidth}
 
@@ -35,24 +34,17 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{10pt}{10pt} % Adjusted spacing
 
-%for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
- 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-%\addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
 
 %for social icons
 \usepackage{fontawesome5}
 \usepackage{MnSymbol,bbding,pifont}
 \usepackage{enumitem} % add this to your preamble
-
-
 
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
@@ -62,145 +54,95 @@
 % non-numbered pages
 \pagestyle{empty}
 
-% BEGIN HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
-    \Huge{Hosain Ghoraba}                                         \\ [7.5pt]
+    \Huge{Hosain Ghoraba}                                         \\ [5pt] % Adjusted spacing
     {\hspace{-1cm} \faMapMarker{\hspace{0.5em} Cairo, Egypt}\par} \\
     \mbox {
-
     \href{https://github.com/hosain-ghoraba}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ \
-
     \href{https://www.linkedin.com/in/hussain-ghoraba-a35752264/}{\raisebox{-0.05\height}\faLinkedin\ Linkedin} \ $|$ \
-
-    \href{mailto:hussain.ghoraba@gmail.com}{\raisebox{-0.05\height}\faEnvelope \  hussain.ghoraba@gmail.com} \ $|$ \
+    \href{mailto:hussain.ghoraba@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ hussain.ghoraba@gmail.com} \ $|$ \
     {\raisebox{-0.05\height}\faMobile \ +20 1026311800}
-
     }
 \end{tabularx}
 
-
-% Education d----------------------------------
-
+% Education----------------------------------
 \section{\textbf{EDUCATION}}
-\begin{itemize}
+\begin{itemize}[noitemsep] % Adjusted spacing
     \item
-          % \href{https://www.guc.edu.eg/}% 
-          {German University In     Cairo} \textbf{(GUC)} \hfill {2020 - 2025 (expected graduation)}
+          {German University in Cairo} \textbf{(GUC)} \hfill {2020 - 2025 (expected graduation)}
     \item B.S. Computer Science and Engineering (in my 9th Semester)
-          %\item 2020 - 2025 
-    \item Grade : B+
-
+    \item Grade: B+
 \end{itemize}
 
-%Internships--------------------------------------
+% Internships--------------------------------------
 \section{\textbf{Internships}}
-\textbf{FullStack Development Intern} $|$ {ASP.NET, SQL, HTML \& CSS}  \hfill {Feb 2024 - May 2024} \\
+\textbf{FullStack Development Intern} $|$ {ASP.NET, SQL, HTML \& CSS}  \hfill {Feb. 2024 - May 2024} \\
 (German University in Cairo) \\
-- Adding fullstack features to the GUC online System
+- Developed full-stack features for the GUC online system.
 
+% Volunteering --------------------------------------
+\section{\textbf{Volunteering}}
+\textbf{Junior Teaching Assistant } (German University in Cairo)  \hfill {Mar. 2023 - Current} \\
+- Helping 20+ students solve SQL, DSA, Java \& Python problems in 4 different courses.
 
-%Teaching --------------------------------------
-\section{\textbf{Teaching}}
-\textbf{Junior Teaching Assistant } (German University In Cairo)  \hfill {Mar 2023 - Current} \\
-- Helping 20+ students solve SQL, DSA, Java \& Python problems in the labs
+% Courses-----------------------------------
+\section{\textbf{Courses (Deeplearning.ai)}}
+\begin{itemize}[noitemsep] % Adjusted spacing
+    \item \href{https://www.coursera.org/account/accomplishments/records/G8L7MM2YLT53}{Supervised Machine Learning: Regression and Classification} \hfill {July 2024}
+    \item \href{https://www.coursera.org/account/accomplishments/records/C36UGWN7ATQ8}{Advanced Learning Algorithms} \hfill {Aug. 2024}
+\end{itemize}
 
-%Projects--------------------------------------------------
+% Projects--------------------------------------------------
 \section{\textbf{Projects}}
 
-\begin{enumerate}[leftmargin=*]
+\begin{enumerate}
 
-    % image classification
-    \item \href{https://github.com/hosain-ghoraba/dogs-vs-cats} {\textbf{\color[rgb]{0,0,1} Image Classification}} $|$ {Tensorflow}\hfill {Feb 2024 - June 2024}
+    % Image Classification
+    \item \href{https://github.com/hosain-ghoraba/dogs-vs-cats} {\textbf{\color[rgb]{0,0,1} Image Classification}} $|$ {TensorFlow}\hfill {Feb. 2024 - June 2024}
           \begin{itemize}
-              \item Used tensorflow \& keras to build an image classification model for Arabic letters images
+              \item Used TensorFlow \& Keras to build an image classification model for Arabic letters images.
           \end{itemize}
 
-          % ACL   
-    \item \href{https://github.com/advanced-computer-lab-2023/Code-of-Duty2-Pharmacy} {\textbf{\color[rgb]{0,0,1} Pharmacy Online System}} $|$ {MERN Stack} (Team of 4)  \hfill {Oct 2023 - Jan 2024}
+    % Pharmacy Online System   
+    \item \href{https://github.com/advanced-computer-lab-2023/Code-of-Duty2-Pharmacy} {\textbf{\color[rgb]{0,0,1} Pharmacy Online System}} $|$ {MERN Stack} (Team of 4)  \hfill {Oct. 2023 - Jan. 2024}
           \begin{itemize}
-              \item Used MVC architecture to implement fullStack features in the system using Node JS, MongoDB, React, Typescript, \& Material UI
+              \item Used MVC architecture to implement full-stack features in the system using Node.js, MongoDB, React, TypeScript, \& Material UI.
           \end{itemize}
 
-          %   Embedded System
-          % \item \href{https://github.com/hosain-ghoraba/Embedded-Bombs/tree/main} {\textbf{\color[rgb]{0,0,1} Embedded System}}  $|$ {C} (Team of 6) \hfill {Oct 2023 - Jan 2024}
-          %       \begin{itemize}
-          %           \item An embedded system (raspberry pi) that adjusts street lighting and gates based on ambient light levels \& traffic conditions
-          %       \end{itemize}
-
-          % Bank Website UI
-          % \item \href{https://github.com/hosain-ghoraba/Bank-Website-UI} {\textbf{\color[rgb]{0,0,1} Bank Website UI}} $|$ {HTML \& CSS} (Team of 5) \hfill {May 2023}
-          %       \begin{itemize}
-          %           \item Implemented the UI of some pages of a bank website, using HTML, CSS \& JS
-          %       \end{itemize}
-
-          %   Database Engine
-    \item \href{https://github.com/hosain-ghoraba/Simple_Database_Engine/tree/main} {\textbf{\color[rgb]{0,0,1} Database Engine}} $|$ {Java} (Team of 5)  \hfill {Mar 2023 - May 2023}
+    % Database Engine
+    \item \href{https://github.com/hosain-ghoraba/Simple_Database_Engine/tree/main} {\textbf{\color[rgb]{0,0,1} Database Engine}} $|$ {Java} (Team of 5)  \hfill {Mar. 2023 - May 2023}
           \begin{itemize}
-              \item A simulation of a simplified SQL database engine
-              \item Increased various operations performance using Octree index \& appropriate data structures
+              \item A simulation of a simplified SQL database engine.
+              \item Increased various operations performance using Octree indexing \& appropriate data structures.
           \end{itemize}
 
-
-          % SQL & Flask
-    \item \href{https://github.com/hosain-ghoraba/Sports-Management_Registration-DBMS} {\textbf{\color[rgb]{0,0,1} Sports Matches Online System}} $|$ {SQL \& Flask} (Team of 2) \hfill {Oct 2022 - Jan 2023}
+    % Sports Matches Online System
+    \item \href{https://github.com/hosain-ghoraba/Sports-Management_Registration-DBMS} {\textbf{\color[rgb]{0,0,1} Sports Matches Online System}} $|$ {SQL \& Flask} (Team of 2) \hfill {Oct. 2022 - Jan. 2023}
           \begin{itemize}
-              \item Online system for managing sports matches creation and
-                    reservation
-              \item SQL : Different parts of the SQL database design and implementation
-              \item FullStack: Flask \& Bootstrap
-
+              \item Online system for managing sports matches creation and reservation.
+              \item SQL: Handled database design and implementation.
+              \item Full-stack: Flask \& Bootstrap.
           \end{itemize}
 
-          % Travelling Website
-          % \item \href{https://github.com/hosain-ghoraba/Travelling-Website} {\textbf{\color[rgb]{0,0,1} Travelling Website}} $|$ {Node Js \& HTML} (Team of 5) \hfill {Jan 2023}
-          %       \begin{itemize}
-          %           \item A simple travelling website , based on client/server architecture
-          %           \item Implemented different parts of the backend using node js \& of the frontend using HTML
-
-          %       \end{itemize}
-
-
-          % 2048 Game
-    \item \href{https://github.com/hosain-ghoraba/Extended-2048-Game} {\textbf{\color[rgb]{0,0,1}  2048 Game}} $|$ {Java}  \hfill {Aug 2022}
+    % Traveling Website
+    \item \href{https://github.com/hosain-ghoraba/Travelling-Website} {\textbf{\color[rgb]{0,0,1} Traveling Website}} $|$ {Node.js \& HTML} (Team of 5) \hfill {Jan. 2023}
           \begin{itemize}
-              \item Solo project for fun (desktop game)
+              \item A simple traveling website based on client/server architecture.
+              \item Developed various parts of the backend using Node.js and the frontend using HTML.
           \end{itemize}
 
-          %   Marvel Game
-    \item \href{https://github.com/hosain-ghoraba/Marvel-Game} {\textbf{\color[rgb]{0,0,1} Heroes, Engage!}} $|$ {Java} (Team of 3) \hfill {Mar 2022 - May 2022}
+    % 2048 Game
+    \item \href{https://github.com/hosain-ghoraba/Extended-2048-Game} {\textbf{\color[rgb]{0,0,1} 2048 Game}} $|$ {Java}  \hfill {Aug. 2022}
           \begin{itemize}
-              \item Multiplayer desktop game, where heroes fight on a grid
-              \item Applied OOP principles in different parts of both the engine (java) and the GUI (swing library)
+              \item Holiday project for fun (desktop game).
           \end{itemize}
 
 \end{enumerate}
 
+% Technical Skills-----------------------------------
+\section{\textbf{Programming Languages}}
 
-
-% Technical skills-----------------------------------
-\section{\textbf{Technical Skills}}
-
-% Java   \FiveStar \FiveStar \FiveStar \FiveStar \hspace{0.2cm}    SQL    \FiveStar \FiveStar \FiveStar           \hspace{0.2cm}
-% FLASK  \FiveStar \FiveStar \FiveStar           \hspace{0.2cm}\\  
-% Python \FiveStar \FiveStar                     \hspace{0.2cm}   
-% HTML   \FiveStar \FiveStar                     \hspace{0.2cm}  
-% JavaScript    \FiveStar                         \hspace{0.2cm}
-% CSS    \FiveStar      
-
-\textbf{Most experienced : } Java \\
-\textbf{Good : } SQL, Python, Flask, Node JS, React, MongoDB \& HTML  \\
-% \textbf{Familiar : } JS, CSS \\
+$\bullet$ Python, Java, SQL, Flask, Node.js, React, MongoDB \& HTML \\
 $\bullet$ Familiar with \textbf{Linux}
-
-
-
-
-% \section{\textbf{Languages}}
-
-%  - Arabic (Native) 
-%  - English (Proficient)
-%  - German (Elementary) 
-
 
 \end{document}
