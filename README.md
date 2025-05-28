@@ -1,6 +1,6 @@
 
 # autoCV
-link : https://hosain-ghoraba.github.io/CV/cv.pdf
+link : [https://hosain-ghoraba.github.io/CV/cv.pdf](https://hosain-ghoraba.github.io/CV/Hosain%20Ghoraba%20CV.pdf)
 
 A clean CV template in LaTeX along with a GitHub action that complies the `*.tex` file and publishes a new PDF version when new changes are pushed to the repo
 
