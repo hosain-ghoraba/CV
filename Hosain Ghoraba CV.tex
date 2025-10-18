@@ -17,6 +17,9 @@
 %for lists within experience section
 \usepackage{enumitem}
 
+% --------------------------------------------------Reduce spacing between ALL list items
+\setlist{noitemsep, topsep=0pt, parsep=1pt, partopsep=1pt}
+
 % centered version of 'X' col. type
 \newcolumntype{C}{>{\centering\arraybackslash}X} 
 
@@ -43,7 +46,6 @@
 %for social icons
 \usepackage{fontawesome5}
 \usepackage{MnSymbol,bbding,pifont}
-\usepackage{enumitem} % add this to your preamble
  
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
@@ -55,7 +57,7 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
     \Huge{Hosain Ghoraba}                                         \\ [5pt] % Adjusted spacing
-    {\hspace{-1cm} \faMapMarker{\hspace{0.5em} Gharbia, Egypt}\par} \\
+    {\hspace{-1cm} \faMapMarker{\hspace{0.1em} Cairo, Egypt}\par} \\
     \mbox {
     \href{https://github.com/hosain-ghoraba}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ \
     \href{https://www.linkedin.com/in/hussain-ghoraba-a35752264/}{\raisebox{-0.05\height}\faLinkedin\ Linkedin} \ $|$ \
@@ -66,7 +68,7 @@
 
 % Education----------------------------------
 \section{\textbf{Education}}
-\begin{itemize}[noitemsep] % Adjusted spacing
+\begin{itemize}
     \item {German University in Cairo (GUC)} \hfill {2020 - 2025}
     \item B.S. Computer Science and Engineering
     \item Grade: B+
@@ -75,17 +77,26 @@
 
 % Internships--------------------------------------
 \section{\textbf{Internships}}
-
-\begin{enumerate}[noitemsep, topsep=0pt, partopsep=0pt, parsep=10pt, itemindent=0pt, leftmargin=*]
+\begin{enumerate}
 
     \item \textbf{DevSecOps Trainee} (NTI) \hfill {Oct 2025 - Current}
-    \\ - Linux, Docker, K8s, OpenStack, Terraform, Ansible, CI/CD, \& AWS.
+    \begin{itemize}
+        \item Linux, Docker, K8s, OpenStack, Terraform, Ansible, CI/CD, \& AWS.
+    \end{itemize}
     \item \textbf{Backend Development Intern} (Mutechen) $|$ {Laravel, PostgreSQL \& Neo4j}  \hfill {Aug 2025 - Oct 2025}
-    \\ - Used Laravel, PostgreSQL, Neo4j, Docker \& AWS to build web apps.
+    \begin{itemize}
+        \item Implemented backend APIs along with their unit \& feature tests.
+        \item Used docker, bitbucket pipelines \& AWS for website deployment.
+        \item Implemented ETL jobs for 14 Million records using bash \& php.
+
+    \end{itemize}
+     
 
     \item \textbf{FullStack Development Intern} (GUC IT sector) $|$ {ASP.NET, SQL, HTML \& CSS}  \hfill {Feb 2024 - May 2024}
-    \\ - Allowed staff to manage upcoming quizzes, events...etc, and students to view them.
-    \\ - Implemented a queuing system for multiple sectors in GUC buildings.
+    \begin{itemize} 
+        \item Enabled staff \& students to manage upcoming quizzes, assignments \& events through the university website.
+        \item Implemented a queuing system for multiple sectors in GUC buildings.
+    \end{itemize}
 
 \end{enumerate}
 
@@ -94,16 +105,17 @@
 
 % Volunteering --------------------------------------
 \section{\textbf{Teaching}}
-\textbf{Junior Teaching Assistant } (German University in Cairo)  \hfill {Mar 2023 - May 2025} \\
-- Helped 20+ students solve SQL, DSA, Java \& Python problems in the labs.
-
+\textbf{Junior Teaching Assistant} (German University in Cairo)  \hfill {Mar 2023 - May 2025}
+    \begin{itemize}
+        \item Monitored 20+ students during their labs to help them solve SQL, DSA, Java \& Python problems.
+    \end{itemize}
 % Projects--------------------------------------------------
 \section{\textbf{Projects}}
 
 \begin{enumerate}
 
     % Talabat backend clone
-    \item \href{https://github.com/hosain-ghoraba/Talabat-Backend-Clone/tree/main} {\textbf{\color[rgb]{0,0,1} Talabat Clone}} $|$ {Spring boot} \hfill {May 2025}
+    \item \href{https://github.com/hosain-ghoraba/Talabat-Backend-Clone/tree/main} {\textbf{\color[rgb]{0,0,1} Talabat Clone}} $|$ {Spring Boot} \hfill {May 2025}
     \   \begin{itemize}
             \item Implemented backend APIs \& their unit tests using Spring boot \& JPA
         \end{itemize}
@@ -156,9 +168,9 @@
 
 
     % Traveling Website
-    \item \href{https://github.com/hosain-ghoraba/Travelling-Website} {\textbf{\color[rgb]{0,0,1} Traveling Website}} $|$ {Node.js \& HTML} \hfill {Jan 2023}
+    \item \href{https://github.com/hosain-ghoraba/Travelling-Website} {\textbf{\color[rgb]{0,0,1} Traveling Website}} $|$ {Express \& HTML} \hfill {Jan 2023}
           \begin{itemize}
-              \item Developed misc parts of the backend using Express.js and the frontend using HTML.
+              \item Developed different parts of the backend using Express.js and the frontend using HTML.
           \end{itemize}
 
     % 2048 Game
@@ -181,10 +193,17 @@
 
 \begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, itemindent=0pt, leftmargin=*]
     \item \textbf{Languages:} Java, Python, C\# \& PHP.
-    \item \textbf{Backend:} Express, Spring Boot, ASP.NET, Laravel \& Flask.
+    \item \textbf{Backend:} Express, Spring Boot, Laravel, ASP.NET \& Flask.
     \item \textbf{Frontend:} React, JS, TS, HTML \& CSS.
     \item \textbf{Databases:} SQL (PostgreSQL, MS SQL Server) \& NoSQL (MongoDB \& Neo4j).
     \item \textbf{DevOps:} Git, Linux, Docker, Ansible, CI/CD \& , AWS.
 \end{itemize}
 
+
+% Additional information-----------------------------------
+\section{\textbf{Additional Information}}
+\begin{itemize}
+    \item \textbf{Military Service:} Finally exempted.
+\end{itemize}
+ 
 \end{document}
